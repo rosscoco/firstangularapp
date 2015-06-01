@@ -1,0 +1,33 @@
+{
+  "name": "firstapp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rosscoco/firstangularapp"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/rosscoco/firstangularapp/issues"
+  },
+  "devDependencies": {
+    "main-bower-files": "~2.8.0",
+    "bower": "~1.4.1",
+    "gulp": "~3.8.11",
+    "karma": "~0.12.35",
+    "http-server": "~0.8.0"
+  },
+  "dependencies": {
+    "requirejs": "~2.1.18",
+    "shelljs": "~0.5.0",
+    "protractor": "~2.1.0"
+  }
+}

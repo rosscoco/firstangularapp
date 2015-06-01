@@ -1,0 +1,35 @@
+{
+	"name":"My Awesome Event",
+	"date":"10 April 2015",
+	"time":"15:00AM",
+	"location" : {
+		"address":"100 Acacia Road",
+		"city":"Chelmsford",
+		"state":"Essex" },
+	"sessions":[
+		{
+			"name":"Awesome Event About Controllers",
+			"creatorName":"Bob Smith",
+			"duration":"1hr",
+			"level":"Advanced",
+			"abstract":"In this session you will do a whole heap of stuff on controllers",
+			"upVoteCount":1
+		},
+		{
+			"name":"Directives are great",
+			"creatorName":"Bob Smith",
+			"duration":"1hr",
+			"level":"Intermediate",
+			"abstract":"Lets do some stuiff on dircetives",
+			"upVoteCount":3
+		},
+		{
+			"name":"What the hell is  a filter?!!",
+			"creatorName":"Bob Smith",
+			"duration":"1hr",
+			"level":"Introductory",
+			"abstract":"Filters, filters and mpre filters. Wow.",
+			"upVoteCount":6
+		}
+	]
+}

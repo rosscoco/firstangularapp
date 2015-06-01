@@ -1,5 +1,7 @@
 /* app css stylesheet */
-
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 
 
 .menu {
@@ -35,7 +37,15 @@ body
 {
   background-color:#203e3f;
   color:#ecf0f1;
+  
+
 }
+
+input
+{
+  margin:10px 0 10px;
+}
+
 
 
 .sessionList li
@@ -65,5 +75,11 @@ body
 {
   color:#777777;
 }
+
+.sessionList
+{
+  margin-top: 20px;
+}
+
 
 
