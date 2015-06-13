@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="EventsApp">
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar navbar-default">      
+        <ul class="nav navbar-nav">
+          <li><a href="./NewEvent.html">New Event</a></li>
+          <li><a href="./UserPage.html">View User</a></li>
+          <li><a href="./CompileExample.html">View User</a></li>
+        </ul>
+    </div>
+    <div class='ng-cloak' ng-controller="CompileServiceController">
+      <div id="appendHere"></div>
+      <form action="" class="form-horizontal">
+        <div class="form-group">
+          <label for="" class="control-label">Insert: </label>
+          <input ng-model="name" type="text">
+        </div>
+          <div class="form-group">
+            <label for="" class="control-label">Markup: </label>
+            <input ng-model="markup" type="text">
+          </div>
+        <button class="btn btn-primary" ng-click="appendDivToElement(markup)">Insert</button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <script src="lib/jquery.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers/CompileServiceController.js"></script>
+  <script src="js/services/EventData.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

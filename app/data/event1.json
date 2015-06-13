@@ -1,5 +1,6 @@
 {
 	"name":"My Awesome Event",
+	"id":1,
 	"date":"10 April 2015",
 	"time":"15:00AM",
 	"location" : {

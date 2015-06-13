@@ -3,4 +3,4 @@
 
 // Declare app level module which depends on filters, and services
 
-var eventsApp = angular.module('EventsApp',[]);
+var eventsApp = angular.module('EventsApp',['ngResource']);

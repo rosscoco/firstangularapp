@@ -1,20 +1,39 @@
 eventsApp.factory(
 	'eventData', 
-	function( $http, $q ){
-		return { 
-			getEvent: function( url ){
+	function( $resource, $q ){
 
+		//var resource = $resource( "data/:id", { id:'@id' });
+		var resource = $resource( "data/:file");
+		return { 
+			getEvent: function( filename )
+			{
 				var deferred = $q.defer();
 
-				$http({method:'GET', url:url })
-					.success( function( data, status, headers, config ) {
-						deferred.resolve(data);
-					})
-					.error(function( data, status, headers, config ) {
-						deferred.reject(status);
+				resource.get({ file:filename },
+					function success( data ) {
+						deferred.resolve( data );
+					},
+					function error( status ) {
+						deferred.reject( status );
 					});
 
-				return deferred.promise;
+				return resource.get({ id:filename });
+			},
+
+			saveEvent: function( data )
+			{
+				var deferred = $q.defer();
+				data.file = fileName;	
+				resource.save(data,
+					function success( response )
+					{
+						deferred.resolve( data );
+					},
+					function error( response )
+					{
+						deferred.reject( status );
+					});
 			}
-		}
-	})
+
+		};
+	});
